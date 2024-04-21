@@ -26,6 +26,9 @@ Disease Classes:
 Datset For the above diseases is-https://www.kaggle.com/datasets/kushagra3204/wheat-plant-diseases
 
 Model Used is CNN Sequential Model
+Image Size-256
+Batch Size-32
+No of Epoch-10
 Accuracy:93%
 Commands:
 $pip install flask
@@ -36,5 +39,7 @@ Screenshots:
 Predicted Output:
 ![image](https://github.com/Kavin2028/Wheat-Disease-Detection/assets/85724232/9d3c9f3d-1ca2-452f-a04f-e20ee6a5edb0)
 
+Base Papers:
+https://www.sciencedirect.com/science/article/pii/S2352914821001313
 
 
