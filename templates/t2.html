@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Disease Information</title>
+    <style>
+        /* Global styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('Golden-Wheat.webp');
+            background-size: cover;
+            background-position: center;
+            color: #333;
+        }
+
+        /* Header styles */
+        header {
+            background-color: rgba(51, 51, 51, 0.7);
+            color: rgba(255, 255, 255, 0.9);
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        /* Navigation styles */
+        nav a {
+            color: rgba(255, 255, 255, 0.9);
+            text-decoration: none;
+            margin-right: 20px;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #fff;
+        }
+
+        /* Container styles */
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Section styles */
+        section {
+            margin-bottom: 30px;
+            padding: 20px;
+            border-radius: 5px;
+            background-color: rgba(255, 255, 255, 0.95);
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            margin-top: 0;
+        }
+
+        p {
+            color: #555;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        li {
+            display: inline;
+            margin-right: 10px;
+        }
+
+        /* Color variations for headings */
+        #healthy h2 { color: #009933; } /* Green */
+        #mildew h2 { color: #ff9933; } /* Orange */
+        #septoria h2 { color: #9900cc; } /* Purple */
+        #brown-rust h2 { color: #cc6600; } /* Brown */
+        #yellow-rust h2 { color: #ffff00; } /* Yellow */
+        #stripe-rust h2 { color: #ff0000; } /* Red */
+
+        /* Predict button styles */
+        .predict-button {
+            display: block;
+            width: 200px;
+            margin: 0 auto;
+            padding: 10px 20px;
+            background-color: #007bff; /* Blue */
+            color: #fff;
+            font-size: 18px;
+            text-align: center;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .predict-button:hover {
+            background-color: #0056b3; /* Darker blue on hover */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Disease Information</h1>
+        <nav>
+            <a href="#introduction">About</a>
+        </nav>
+    </header>
+
+    <div class="container mt-5">
+        <h1 class="text-center mb-5">Wheat Disease Detector</h1>
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <form action="/classify" method="POST" enctype="multipart/form-data">
+                    <div class="form-group">
+                        <label for="image">Select an image to upload</label>
+                        <input type="file" class="form-control-file" id="image" name="image" required>
+                    </div>
+                    <button type="submit" class="predict-button">Predict</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <section id="introduction">
+            <h2>About</h2>
+            <p>This page provides information about various plant diseases, including healthy, mildew, septoria, brown rust, yellow rust, and stripe rust.</p>
+            <p>Click on the links below to learn more about each disease:</p>
+            <ul>
+                <li><a href="#healthy">Healthy</a></li>
+                <li><a href="#mildew">Mildew</a></li>
+                <li><a href="#septoria">Septoria</a></li>
+                <li><a href="#brown-rust">Brown Rust</a></li>
+                <li><a href="#yellow-rust">Yellow Rust</a></li>
+                <li><a href="#stripe-rust">Stripe Rust</a></li>
+            </ul>
+        </section>
+        <section id="healthy">
+            <h2>Healthy</h2>
+            <p><strong>Disease Explanation:</strong> The plant is free from any disease or abnormality, exhibiting normal growth and color.</p>
+            <p><strong>Causes:</strong> Proper agricultural practices and favorable environmental conditions.</p>
+            <p><strong>Methods to Stop:</strong> Maintain soil fertility, proper irrigation, weed control, and regular monitoring.</p>
+        </section>
+        <section id="mildew">
+            <h2>Mildew</h2>
+            <p><strong>Disease Explanation:</strong> Mildew is a fungal disease that affects various plants, including wheat. It can cause white powdery patches on the leaves, inhibiting photosynthesis and leading to stunted growth.</p>
+            <p><strong>Causes:</strong> High humidity, poor air circulation, and crowded planting conditions.</p>
+            <p><strong>Methods to Stop:</strong> Improve air circulation, avoid overhead watering, remove infected plant parts, and apply fungicides if necessary.</p>
+        </section>
+        <section id="septoria">
+            <h2>Septoria</h2>
+            <p><strong>Disease Explanation:</strong> Septoria leaf spot is a common fungal disease that affects wheat plants. It is characterized by small, dark spots on the leaves, which can coalesce and cause significant defoliation if left untreated.</p>
+            <p><strong>Causes:</strong> Warm and humid conditions, overwintering spores, and infected plant debris.</p>
+            <p><strong>Methods to Stop:</strong> Crop rotation, removing infected plant debris, fungicide applications, and planting resistant varieties.</p>
+        </section>
+        <section id="brown-rust">
+            <h2>Brown Rust</h2>
+            <p><strong>Disease Explanation:</strong> Brown rust is a fungal disease that affects various crops, including wheat, barley, and rye. It is characterized by brownish-orange pustules on the leaves, which can reduce crop yield if left untreated.</p>
+            <p><strong>Causes:</strong> Warm and humid weather, susceptible plant varieties, and infected plant debris.</p>
+            <p><strong>Methods to Stop:</strong> Planting resistant varieties, crop rotation, removing infected plant debris, and fungicide applications.</p>
+        </section>
+        <section id="yellow-rust">
+            <h2>Yellow Rust</h2>
+            <p><strong>Disease Explanation:</strong> Yellow rust, also known as stripe rust, is caused by a fungal pathogen and affects wheat and other cereal crops. It is characterized by yellow-orange lesions on the leaves, which can lead to significant yield losses if not controlled.</p>
+            <p><strong>Causes:</strong> Cool and humid weather, susceptible plant varieties, and infected plant debris.</p>
+            <p><strong>Methods to Stop:</strong> Planting resistant varieties, timely fungicide applications, and crop rotation.</p>
+        </section>
+        <section id="stripe-rust">
+            <h2>Stripe Rust</h2>
+            <p><strong>Disease Explanation:</strong> Stripe rust, also known as yellow rust, is a fungal disease that affects wheat, barley, and other cereal crops. It is characterized by yellowish-orange stripes on the leaves, which can cause extensive damage to the crops if not managed properly.</p>
+            <p><strong>Causes:</strong> Cool and humid weather conditions, susceptible plant varieties, and infected plant debris.</p>
+            <p><strong>Methods to Stop:</strong> Planting resistant varieties, practicing crop rotation, timely fungicide applications, and removing infected plant debris.</p>
+        </section>
+    </div>
+</body>
+</html>
