@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Wheat Disease Classifier - Result</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/result.css') }}">
+    <style>
+        body {
+            background-image: url('/static/Wheat.jpg');
+            background-size:150%; /* Ensure the background covers the entire page */
+            background-position: center; /* Center the background image */
+            margin: 0; /* Remove default body margin */
+            padding: 0; /* Remove default body padding */
+            background-repeat: no-repeat;
+        }
+        .super {
+            text-align: center; /* Center the content */
+            padding: 20px; /* Adjust vertical padding as needed */
+            border: 2px solid black;
+            margin-top: 15%;
+            background-color: antiquewhite;
+            opacity: 0.7;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <center>
+    <div class="super">
+    <h1>Classification Result:</h1>
+    <p style="font-weight: bold;">{{ result }}</p>
+    <a href="/" class="back">Back to Home</a>
+    </div>
+</center>
+</body>
+</html>
