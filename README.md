@@ -1,4 +1,4 @@
-# Wheat-Disease-Detection
+# Wheat-Disease-Detection-Deployed as Web app
 
 Dataset :Kaagle-https://www.kaggle.com/datasets/sinadunk23/behzad-safari-jalal/data
 
