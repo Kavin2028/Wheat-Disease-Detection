@@ -44,4 +44,4 @@ Predicted Output:
 Base Papers:
 https://www.sciencedirect.com/science/article/pii/S2352914821001313
 
-Run the model so the pre-trained model get downloaded n .h5 format use the pre-trained model to detect the diseases.
+Run the model so the pre-trained model get downloaded in .h5 format use the pre-trained model to detect the diseases.
