@@ -35,9 +35,11 @@ $pip install flask
 $python app.py
 
 Screenshots:
-![image](https://github.com/Kavin2028/Wheat-Disease-Detection/assets/85724232/182feb56-697d-4cd6-889e-1bd570b502cd)
+![image](https://github.com/Kavin2028/Wheat-Disease-Detection/assets/85724232/80fba126-86dd-4af6-8b7d-4ab1073138a2)
+![image](https://github.com/Kavin2028/Wheat-Disease-Detection/assets/85724232/b1151729-b6b9-411a-ac79-087fcd991dd3)
+
 Predicted Output:
-![image](https://github.com/Kavin2028/Wheat-Disease-Detection/assets/85724232/9d3c9f3d-1ca2-452f-a04f-e20ee6a5edb0)
+![image](https://github.com/Kavin2028/Wheat-Disease-Detection/assets/85724232/4381a73c-d21b-42f8-8d57-d598afeb504c)
 
 Base Papers:
 https://www.sciencedirect.com/science/article/pii/S2352914821001313
