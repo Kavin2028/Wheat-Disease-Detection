@@ -24,6 +24,7 @@ Disease Classes:
   Powdery Mildew
   
 Datset For the above diseases is-https://www.kaggle.com/datasets/kushagra3204/wheat-plant-diseases
+Saved H5 model https://drive.google.com/file/d/1fArut8ubLLov_fTRT5IqE6t8GhV1ATvw/view?usp=sharing
 
 Model Used is CNN Sequential Model
 Image Size-256
